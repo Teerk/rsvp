@@ -1,0 +1,453 @@
+:root {
+    --primary-color: #5C6B4E; /* Olive Green - Main accent color, deep and earthy */
+    --secondary-color: #9AB486; /* Muted Sage Green - Lighter accent, for backgrounds like countdown */
+    --text-color: #333333; /* Dark Charcoal - Primary body text for excellent readability */
+    --light-text-color: #7F7D74; /* Warm Gray/Taupe - Softer text, complementing the olives */
+    --background-light: #F8F7F0; /* Creamy Off-White - Main page background, soft and warm */
+    --background-dark: #4B5A3C; /* Deep Olive Green - Darker background for navbar, RSVP, strong contrast */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+/* Reset básico y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-light);
+    scroll-behavior: smooth;
+    
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    border: red solid 1px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.5em; /* Ajustado para la portada */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.8em;
+    color: var(--background-dark);
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: var(--light-text-color);
+}
+
+/* Hero Section (Portada) */
+.hero-section {
+    background: url('./IMG3.jpeg') no-repeat center center/cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section::before { /* Capa oscura para mejor lectura del texto */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+.wedding-date {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--background-dark);
+    padding: 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los ítems se envuelvan en pantallas pequeñas */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: dashed;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--secondary-color);
+
+}
+
+/* Cuenta Regresiva */
+#countdown {
+    background-color: var(--secondary-color);
+    padding: 80px 20px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.countdown-timer div {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-width: 120px;
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.countdown-timer div span {
+    display: block;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--background-dark);
+}
+
+/* Detalles de la Boda */
+#details {
+    background-color: var(--background-light);
+}
+
+.detail-block {
+    background-color: #fff;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.detail-block h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.detail-block p {
+    font-size: 1.05em;
+    margin-bottom: 10px;
+}
+
+.map-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.map-link:hover {
+    background-color: var(--background-dark);
+}
+
+/* Galería de Fotos */
+#gallery {
+    background-color: var(--secondary-color);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Código de Vestimenta */
+#dresscode {
+    background-color: var(--background-light);
+}
+
+.dresscode-text {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#dresscode ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: inline-block; /* Para centrar la lista */
+    text-align: left;
+}
+
+#dresscode ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#dresscode ul li strong {
+    color: var(--primary-color);
+}
+
+/* RSVP */
+#rsvp {
+    background-color: var(--background-dark);
+    color: #fff;
+}
+
+#rsvp h2 {
+    color: #fff;
+}
+
+#rsvp p {
+    color: #eee;
+}
+
+.rsvp-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 30px auto 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    text-align: left;
+    color: var(--text-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: var(--font-body);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: var(--background-dark);
+}
+
+.hidden-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none; /* Se mostrará con JS */
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+}
+
+.footer .social-links {
+    margin-top: 15px;
+}
+
+.footer .social-links strong {
+    color: var(--secondary-color);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3em;
+    }
+    .hero-content h2 {
+        font-size: 2em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .wedding-date {
+        font-size: 1.5em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .countdown-timer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .countdown-timer div {
+        min-width: auto;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .detail-block, .rsvp-form {
+        padding: 25px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+    .wedding-date {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .countdown-timer div span {
+        font-size: 2.5em;
+    }
+}
