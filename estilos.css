@@ -1,0 +1,84 @@
+
+
+
+.lora-font {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.monsieur-font{
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.textNombresPrincipal{
+text-align: center;
+font-size: 60px;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+ 
+color:#fff;
+}
+
+
+.textHomePrincipal{
+text-align: center;
+font-size: 40px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+ 
+color:#000;
+}
+
+.textHomeSecundario{
+text-align: center;
+font-size: 25px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+ 
+color:#000;
+
+}
+
+
+
+
+.carPie{
+background-color: #000;
+padding: 60px 0px;
+}
+
+.cardPieTitulo{
+    color:#ffffff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+    padding: 30px 0px;
+}
+
+.cardPieHast{
+    text-align: center;  
+}
+.cardPieHast > p{
+    border: #ffffff solid 1px;
+    color:#ffffff;
+    font-size: 20px;
+    padding: 18px;
+    text-align: center;  
+}
+
+.cardPieMensaje{
+        color:#ffffff;
+    font-size: 20px;
+    padding: 18px;
+    text-align: center;
+}
