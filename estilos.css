@@ -1,60 +1,152 @@
+.fuente_1 {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuente_2 {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fuente_3 {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
 
 
+.fuente_4 {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
-.lora-font {
+
+.fuente_5 {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.fuente_6 {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fuente_7 {
+  font-family: "Libertinus Math", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.fuente_8 {
+  font-family: "WindSong", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuente_9 {
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.fuente_10 {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
-
-.monsieur-font{
+.fuente_11 {
   font-family: "Monsieur La Doulaise", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-.textNombresPrincipal{
-text-align: center;
-font-size: 60px;
-  font-family: "Monsieur La Doulaise", cursive;
+
+
+.fuente_12 {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.fuente_13 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fuente_14 {
+  font-family: "Antic Didone", serif;
   font-weight: 400;
   font-style: normal;
- 
+}
+
+
+
+.textNombresPrincipal{
+text-align: center;
+font-size: 60px; 
 color:#fff;
 }
 
 
 .textHomePrincipal{
 text-align: center;
-font-size: 40px;
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
- 
+font-size: 40px; 
 color:#000;
 }
 
 .textHomeSecundario{
 text-align: center;
-font-size: 25px;
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
- 
+font-size: 25px; 
 color:#000;
-
 }
 
+
+.text-muted-green{
+  color:#6B8E23
+}
+
+.botonConfirmar{
+    border: solid 1px #999999;
+    text-align: center;
+    padding: 10px 50px;
+    background: #000;
+    color:#fff;
+    text-decoration: none;    
+    font-size: 22px;
+}
+
+.botonConfirmar:hover{
+    border: solid 1px #4b4b4b;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 50px;
+    background: #484848;
+    color:#fff;
+    text-decoration: none;    
+}
 
 
 
 .carPie{
 background-color: #000;
-padding: 60px 0px;
+padding: 15px 15px;
 }
 
 .cardPieTitulo{
@@ -81,4 +173,64 @@ padding: 60px 0px;
     font-size: 20px;
     padding: 18px;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Countdown specific styling for circles */
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Smaller gap for circles */
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.countdown-timer div {
+    background-color: #1d270a; 
+    border-radius: 5px; 
+    width: 90px; 
+    height: 90px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(144, 144, 144, 0.5);
+    border: #000 solid 1px;
+}
+
+.countdown-timer div span {
+    display: block;
+    font-size: 1.8em;
+    /* Number size */
+    font-weight: 700;
+    color: #fff;
+    /* White numbers */
+    line-height: 1;
+    margin-bottom: 2px;
+    /* Small space between number and text */
+}
+
+
+
+.cardInicio{
+  padding: 10px;
+  border: solid 1px #000;
 }
