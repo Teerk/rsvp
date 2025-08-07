@@ -130,6 +130,9 @@ color:#000;
     color:#fff;
     text-decoration: none;    
     font-size: 22px;
+      font-family: "Libertinus Math", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .botonConfirmar:hover{
@@ -140,6 +143,9 @@ color:#000;
     background: #484848;
     color:#fff;
     text-decoration: none;    
+      font-family: "Libertinus Math", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -201,7 +207,7 @@ padding: 15px 15px;
 }
 
 .countdown-timer div {
-    background-color: #1d270a; 
+    background-color: #527410; 
     border-radius: 5px; 
     width: 90px; 
     height: 90px; 
@@ -213,7 +219,7 @@ padding: 15px 15px;
     color: #fff;
     font-weight: 600;
     box-shadow: 0 5px 10px rgba(144, 144, 144, 0.5);
-    border: #000 solid 1px;
+    border: #527410 solid 1px;
 }
 
 .countdown-timer div span {
