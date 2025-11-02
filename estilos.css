@@ -1,242 +1,293 @@
-.fuente_1 {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 400;
-  font-style: normal;
+ .ubicar {
+        border: red solid 1px;
+    }
+
+    .cardPrincipalBorde {
+        border: 1px solid #6b6b6b;
+        border-radius: 2px;
+        padding: 50px 10px;
+        margin: 20px 0px;
+    }
+
+    .cardPrincipalSinBorde {
+        border-radius: 20px;
+        padding: 50px 10px;
+        margin: 20px 0px;
+    }
+
+
+    .anclaLink {
+        border: solid 1px #999999;
+        text-align: center;
+        padding: 10px 50px;
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .anclaLink:hover {
+        border: solid 1px #4b4b4b;
+        border-radius: 3px;
+        text-align: center;
+        padding: 10px 50px;
+        background: #484848;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+    .corazon-texto {
+  color: black;
+  font-size: 3rem; /* Cambia el tamaño como quieras */
 }
 
-.fuente_2 {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
-  font-style: normal;
-}
+    /* --- Reseteo Básico --- */
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f4f4f4;
+        /* Color de fondo para lo que sigue */
+    }
 
-.fuente_3 {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
-  font-style: normal;
-}
+    /* --- Estilo de la Sección Principal (Hero) --- */
+    .wedding-hero {
+        height: 120vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        background-image: url('./IMG_101.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
 
+    .wedding-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
 
-.fuente_4 {
-  font-family: "Pinyon Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 90%;
+    }
 
+    .intro-text {
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+        margin: 0;
+        text-transform: uppercase;
+    }
 
-.fuente_5 {
-  font-family: "Italianno", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+    .couple-names {
+        font-size: 5rem;
+        margin: -10px 0 20px 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
 
+    /* --- Estilo del Contador --- */
+    .countdown-timer {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 30px 0;
+    }
 
-.fuente_6 {
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
+    .time-box {
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
 
-.fuente_7 {
-  font-family: "Libertinus Math", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+    .time-box .number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
 
+    .time-box .label {
+        font-size: 0.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-.fuente_8 {
-  font-family: "WindSong", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+    /* --- Estilo de la Fecha Final --- */
+    .date-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
 
-.fuente_9 {
-  font-family: "WindSong", cursive;
-  font-weight: 500;
-  font-style: normal;
-}
+    .date-container .line {
+        flex-grow: 1;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.7);
+        max-width: 120px;
+    }
 
+    .date-container .date-text {
+        padding: 0 20px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        /* Evita que la fecha se parta */
+    }
 
-.fuente_10 {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
+    /* --- Estilos para Móviles --- */
+    @media (max-width: 600px) {
+        .couple-names {
+            font-size: 3.5rem;
+        }
 
-.fuente_11 {
-  font-family: "Monsieur La Doulaise", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+        .time-box {
+            width: 70px;
+            height: 70px;
+        }
 
+        .time-box .number {
+            font-size: 1.8rem;
+        }
 
+        .time-box .label {
+            font-size: 0.6rem;
+        }
 
-.fuente_12 {
-  font-family: "Merriweather", serif;
-  font-optical-sizing: auto;
-  font-weight:300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
+        .date-container .line {
+            max-width: 50px;
+        }
 
-
-.fuente_13 {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.fuente_14 {
-  font-family: "Antic Didone", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-
-.textNombresPrincipal{
-text-align: center;
-font-size: 60px; 
-color:#fff;
-}
-
-
-.textHomePrincipal{
-text-align: center;
-font-size: 40px; 
-color:#000;
-}
-
-.textHomeSecundario{
-text-align: center;
-font-size: 25px; 
-color:#000;
-}
-
-
-.text-muted-green{
-  color:#6B8E23
-}
-
-.botonConfirmar{
-    border: solid 1px #999999;
-    text-align: center;
-    padding: 10px 50px;
-    background: #000;
-    color:#fff;
-    text-decoration: none;    
-    font-size: 22px;
-      font-family: "Libertinus Math", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.botonConfirmar:hover{
-    border: solid 1px #4b4b4b;
-    border-radius: 3px;
-    text-align: center;
-    padding: 10px 50px;
-    background: #484848;
-    color:#fff;
-    text-decoration: none;    
-      font-family: "Libertinus Math", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
+        .date-container .date-text {
+            font-size: 0.8rem;
+            padding: 0 10px;
+        }
+    }
 
 
-.carPie{
-background-color: #000;
-padding: 15px 15px;
-}
+    /* 2da seccion */
+    /* --- Estilos de la Sección de Cita/Video Grande --- */
+    .video-quote-section {
+        height: 100vh;
+        /* Ocupa toda la altura de la pantalla */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
 
-.cardPieTitulo{
-    color:#ffffff;
-    font-size: 40px;
-    text-align: center;
-    line-height: 1;
-    padding: 30px 0px;
-}
+        /* CAMBIA ESTA URL POR LA IMAGEN DE FONDO DE LA PAREJA */
+        background-image: url('https://images.unsplash.com/photo-1571214873177-f013b839f0e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzAyMDg5NTd8&ixlib=rb-4.0.3&q=80&w=1920');
+        background-size: cover;
+        background-position: center;
+    }
 
-.cardPieHast{
-    text-align: center;  
-}
-.cardPieHast > p{
-    border: #ffffff solid 1px;
-    color:#ffffff;
-    font-size: 20px;
-    padding: 18px;
-    text-align: center;  
-}
+    /* Superposición oscura para que el texto sea legible */
+    .video-quote-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* 50% de opacidad negra */
+        z-index: 1;
+    }
 
-.cardPieMensaje{
-        color:#ffffff;
-    font-size: 20px;
-    padding: 18px;
-    text-align: center;
-}
+    .video-quote-content {
+        position: relative;
+        z-index: 2;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Empuja el enlace hacia abajo */
+        min-height: 80vh;
+        /* Asegura espacio para empujar abajo */
+    }
 
+    .video-quote-text {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.6;
+        margin: auto 0;
+        /* Centra verticalmente la cita */
+        padding: 0 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
 
+    .video-quote-text .citation {
+        display: block;
+        /* La cita en una nueva línea */
+        font-size: 1.1rem;
+        margin-top: 15px;
+        font-weight: 300;
+        font-style: normal;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Countdown specific styling for circles */
-.countdown-timer {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    /* Smaller gap for circles */
-    margin-top: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.countdown-timer div {
-    background-color: #527410; 
-    border-radius: 5px; 
-    width: 90px; 
-    height: 90px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9em;
-    color: #fff;
-    font-weight: 600;
-    box-shadow: 0 5px 10px rgba(144, 144, 144, 0.5);
-    border: #527410 solid 1px;
-}
-
-.countdown-timer div span {
-    display: block;
-    font-size: 1.8em;
-    /* Number size */
-    font-weight: 700;
-    color: #fff;
-    /* White numbers */
-    line-height: 1;
-    margin-bottom: 2px;
-    /* Small space between number and text */
-}
+    /* --- Reproductor de Medios (Placeholder) --- */
+    .video-quote-content audio {
+        width: 90%;
+        max-width: 300px;
+        /* Mismo ancho que el placeholder */
+        margin: 40px auto 0 auto;
+        /* Mismos márgenes */
+        display: block;
+        /* Asegura que se centre correctamente */
+    }
 
 
+    .website-link {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 50px;
+        /* Empuja el enlace hacia abajo */
+        letter-spacing: 1px;
+    }
 
-.cardInicio{
-  padding: 10px;
-  border: solid 1px #000;
-}
+    /* --- Media Queries (Móvil) --- */
+    @media (max-width: 600px) {
+        .video-quote-text {
+            font-size: 1.3rem;
+        }
+
+        .video-quote-text .citation {
+            font-size: 0.9rem;
+        }
+
+
+    }

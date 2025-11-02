@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./tamTexto.css">
-
+    <link rel="stylesheet" href="./estilos.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,302 +30,6 @@
 </head>
 
 <!-- --https://invitado.mx/lulaypau/ -->
-
-<style>
-    .ubicar {
-        border: red solid 1px;
-    }
-
-    .cardPrincipalBorde {
-        border: 1px solid #6b6b6b;
-        border-radius: 2px;
-        padding: 50px 10px;
-        margin: 20px 0px;
-    }
-
-    .cardPrincipalSinBorde {
-        border-radius: 20px;
-        padding: 50px 10px;
-        margin: 20px 0px;
-    }
-
-
-    .anclaLink {
-        border: solid 1px #999999;
-        text-align: center;
-        padding: 10px 50px;
-        background: #000;
-        color: #fff;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .anclaLink:hover {
-        border: solid 1px #4b4b4b;
-        border-radius: 3px;
-        text-align: center;
-        padding: 10px 50px;
-        background: #484848;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-
-    .corazon-texto {
-  color: black;
-  font-size: 3rem; /* Cambia el tamaño como quieras */
-}
-
-    /* --- Reseteo Básico --- */
-    body,
-    html {
-        margin: 0;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        background-color: #f4f4f4;
-        /* Color de fondo para lo que sigue */
-    }
-
-    /* --- Estilo de la Sección Principal (Hero) --- */
-    .wedding-hero {
-        height: 95vh;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-        background-image: url('./IMG_102.jpeg');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .wedding-hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 1;
-    }
-
-    .hero-content {
-        position: relative;
-        z-index: 2;
-        max-width: 90%;
-    }
-
-    .intro-text {
-        font-size: 1.2rem;
-        font-weight: 300;
-        letter-spacing: 3px;
-        margin: 0;
-        text-transform: uppercase;
-    }
-
-    .couple-names {
-        font-size: 5rem;
-        margin: -10px 0 20px 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    /* --- Estilo del Contador --- */
-    .countdown-timer {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin: 30px 0;
-    }
-
-    .time-box {
-        background-color: rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 4px;
-        width: 100px;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .time-box .number {
-        font-size: 2.5rem;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-
-    .time-box .label {
-        font-size: 0.8rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    /* --- Estilo de la Fecha Final --- */
-    .date-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-    }
-
-    .date-container .line {
-        flex-grow: 1;
-        height: 1px;
-        background-color: rgba(255, 255, 255, 0.7);
-        max-width: 120px;
-    }
-
-    .date-container .date-text {
-        padding: 0 20px;
-        font-size: 0.9rem;
-        font-weight: 400;
-        letter-spacing: 2px;
-        white-space: nowrap;
-        /* Evita que la fecha se parta */
-    }
-
-    /* --- Estilos para Móviles --- */
-    @media (max-width: 600px) {
-        .couple-names {
-            font-size: 3.5rem;
-        }
-
-        .time-box {
-            width: 70px;
-            height: 70px;
-        }
-
-        .time-box .number {
-            font-size: 1.8rem;
-        }
-
-        .time-box .label {
-            font-size: 0.6rem;
-        }
-
-        .date-container .line {
-            max-width: 50px;
-        }
-
-        .date-container .date-text {
-            font-size: 0.8rem;
-            padding: 0 10px;
-        }
-    }
-
-
-    /* 2da seccion */
-    /* --- Estilos de la Sección de Cita/Video Grande --- */
-    .video-quote-section {
-        height: 100vh;
-        /* Ocupa toda la altura de la pantalla */
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-        padding: 20px;
-        box-sizing: border-box;
-
-        /* CAMBIA ESTA URL POR LA IMAGEN DE FONDO DE LA PAREJA */
-        background-image: url('https://images.unsplash.com/photo-1571214873177-f013b839f0e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MzAyMDg5NTd8&ixlib=rb-4.0.3&q=80&w=1920');
-        background-size: cover;
-        background-position: center;
-    }
-
-    /* Superposición oscura para que el texto sea legible */
-    .video-quote-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        /* 50% de opacidad negra */
-        z-index: 1;
-    }
-
-    .video-quote-content {
-        position: relative;
-        z-index: 2;
-        max-width: 600px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* Empuja el enlace hacia abajo */
-        min-height: 80vh;
-        /* Asegura espacio para empujar abajo */
-    }
-
-    .video-quote-text {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.8rem;
-        font-style: italic;
-        font-weight: 400;
-        line-height: 1.6;
-        margin: auto 0;
-        /* Centra verticalmente la cita */
-        padding: 0 20px;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    }
-
-    .video-quote-text .citation {
-        display: block;
-        /* La cita en una nueva línea */
-        font-size: 1.1rem;
-        margin-top: 15px;
-        font-weight: 300;
-        font-style: normal;
-    }
-
-    /* --- Reproductor de Medios (Placeholder) --- */
-    .video-quote-content audio {
-        width: 90%;
-        max-width: 300px;
-        /* Mismo ancho que el placeholder */
-        margin: 40px auto 0 auto;
-        /* Mismos márgenes */
-        display: block;
-        /* Asegura que se centre correctamente */
-    }
-
-
-    .website-link {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 0.8rem;
-        font-weight: 300;
-        color: rgba(255, 255, 255, 0.7);
-        margin-top: 50px;
-        /* Empuja el enlace hacia abajo */
-        letter-spacing: 1px;
-    }
-
-    /* --- Media Queries (Móvil) --- */
-    @media (max-width: 600px) {
-        .video-quote-text {
-            font-size: 1.3rem;
-        }
-
-        .video-quote-text .citation {
-            font-size: 0.9rem;
-        }
-
-
-    }
-</style>
 
 <body>
 
@@ -358,6 +62,7 @@
 
     <section class="wedding-hero">
         <div class="hero-content">
+            <div class="py-5"></div>
             <p class="intro-text fuente_tipo3">¡Nos Casamos!</p>
             <br>
 
@@ -384,6 +89,13 @@
                     <span class="number" id="seconds">00</span>
                     <span class="label">Segundos</span>
                 </div>
+            </div>
+
+            <div>
+                <!-- <audio autoplay controls style="width: 80%; height: 30px; background-color: transparent;">
+                    <source src="./song1.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio> -->
             </div>
 
             <div class="date-container">
@@ -419,6 +131,8 @@
 
     </div>
 
+    
+
     <div class="container-fluid">
         <div class="container">
             <div class="row text-center">
@@ -426,22 +140,21 @@
                     <p class="fuente_tipo3 text10">¿DONDÉ?</p>
                     <h1 class="fuente_tipo3 txt40">CEREMONIA</h1>
                     <p class="fuente_tipo3 txt40">4:00PM</p>
-                    <p class="fuente_tipo3 text8">
-                        JARDÍN CALI COANATL 
-                    </p>
-                    <P>REFORMA 2, CUANALÁ, 72640 PUEBLA, PUE.</P>
                     <hr>
                     <h1 class="fuente_tipo3 txt40">RECEPCIÓN</h1>
                     <p class="fuente_tipo3 txt40">5:00PM</p>
                     <p class="fuente_tipo3 text8">
-                        JARDÍN CALI COANATL 
+                        JARDÍN CALI COANATL
                     </p>
-                    <P>REFORMA 2, CUANALÁ, 72640 PUEBLA, PUE.</P>
+                    <p class="fuente_tipo3 text8">REFORMA 2, CUANALÁ, 72640 PUEBLA, PUE.</p>
                 </div>
                 <div class="py-3">
-                    <a class="anclaLink" href="https://maps.app.goo.gl/pqLWZFaMjkACVMam9">Ir con Google Maps <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-</svg> </a>
+                    <a class="anclaLink" href="https://maps.app.goo.gl/pqLWZFaMjkACVMam9">Ir con Google Maps <svg
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg> </a>
                 </div>
             </div>
         </div>
@@ -457,9 +170,9 @@
             /* Habilita el layout de Grid */
             display: grid;
             /* Define 4 columnas con el mismo ancho (1fr) */
-            grid-template-columns: repeat(3, 3fr);
+            grid-template-columns: repeat(4, 2fr);
             /* Define el espacio entre celdas */
-            gap: 5px;
+            gap: 1px;
             /* Rellena automáticamente los espacios si es posible (como Masonry) */
             grid-auto-flow: dense;
             /* Ajusta el ancho para el ejemplo, puedes omitirlo */
@@ -480,12 +193,12 @@
 
         /* Imagen 1: Ocupa 2 columnas y 2 filas (grande) */
         .item-1 {
-            grid-column: span 2;
+            grid-column: span 3;
             grid-row: span 2;
         }
 
         .item-4 {
-            grid-column: span 1;
+            grid-column: span 3;
             grid-row: span 2;
         }
 
@@ -505,33 +218,34 @@
                 grid-column: span 2;
                 grid-row: span 2;
             }
-                 .item-4 {
-            grid-column: span 2;
-            grid-row: span 2;
-        }
+
+            .item-4 {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
         }
     </style>
 
     <div class="row d-flex justify-content-center">
-        <h1 class="fuente_tipo3 txt40 text-center py-4">NUESTROS MOMENTOS</h1>
+        <h1 class="fuente_tipo3 txt50 text-center py-4">SAVE THE DATE</h1>
         <div class="gallery">
             <div class="gallery-item item-1">
-                <img src="./IMG_100.jpeg" alt="Descripción de la  1">
+                <img src="./IMG_103.jpeg">
             </div>
             <div class="gallery-item item-2">
-                <img src="./IMG_101.jpeg" alt="Descripción de la  2">
+                <img src="./IMG_1951.jpeg">
             </div>
             <div class="gallery-item item-3">
-                <img src="./IMG_102.jpeg" alt="Descripción de la  3">
+                <img src="./IMG_101.jpeg">
             </div>
             <div class="gallery-item item-4">
-                <img src="./IMG_103.jpeg" alt="Descripción de la  4">
+                <img src="./IMG_2166.png">
             </div>
             <div class="gallery-item item-5">
-                <img src="./IMG_104.jpeg" alt="Descripción de la  5">
+                <img src="./IMG_1941.jpeg">
             </div>
             <div class="gallery-item item-6">
-                <img src="./IMG_105.jpeg" alt="Descripción de la  6">
+                <img src="./IMG_1954.png">
             </div>
         </div>
     </div>
@@ -542,20 +256,33 @@
         <div class="container">
             <div class="row text-center">
                 <div class="cardPrincipalSinBorde">
-                      <h1 class="fuente_tipo3 txt40">CONSIDERACIONES</h1>
+                    <P class="fuente_tipo3 txt40">CONSIDERACIONES</P>
 
-                    <p class="fuente_tipo3 txt40">CODIGO DE VESTIMENTA</p>
-                    <img src="./RECURSO_VESTIMENTA.png" width="100px" alt="">
-                    <p>FORMAL</p>
+                    <div class="py-2">
+                        <p class="fuente_tipo3 txt20">CÓDIGO DE VESTIMENTA:</p>
+                        <img src="./RECURSO_VESTIMENTA.png" width="100px" alt="">
+                        <p class="fuente_tipo3 text8">FORMAL</p>
+                         <p class="fuente_tipo3 text8">*El color blanco es exclusivo de la novia</p>
+                    </div>
+<p>-</p>
+                    <div class="py-2">
+                        <p class="fuente_tipo3 txt20">PUNTUALIDAD:</p>
+                        <p class="fuente_tipo3 text8">SE PUNTUAL PARA QUE NO TE PIERDAS NINGUN DETALLE</p>
 
-                    <p class="fuente_tipo3 txt40">PUNTUALIDAD</p>
-                    <img class="py-1" src="./RECURSO_RELOJ.png" width="40px" alt="">
-                    <p>SE PUNTUAL PARA QUE NO TE PIERDAS NINGUN DETALLE</p>
-                    <img src="" alt="">
+                    </div>
+                <p>-</p>
+                    <div class="py-2">
+                        <p class="fuente_tipo3 txt20">NO NIÑOS:</p>
+                        <p class="fuente_tipo3 text8">AUNQUE AMAMOS A SUS PEQUEÑOS HAGAN DE ESTE DIA UNA CITA Y
+                            PASENMOSLA INCREIBLE</p>
 
-                    <p class="fuente_tipo3 txt40">NO NIÑOS</p>
-                    <p>AUNQUE AMAMOS A SUS PEQUEÑOS HAGAN DE ESTE DIA UNA CITA Y PASENMOSLA INCREIBLE</p>
+                    </div>
+                    <p>-</p>
+                    <div class="py-2">
+                        <p class="fuente_tipo3 txt20">OTROS:</p>
+                            <p class="fuente_tipo3 text8">TACON GRUESO | SACO/ABRIGO | REPELENTE DE INSECTOS</p>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -566,16 +293,43 @@
         <div class="container">
             <div class="row text-center">
                 <div class="cardPrincipalBorde">
+                    <h1 class="fuente_tipo3 txt40">MESA DE REGALOS</h1>
+                    <p class="fuente_tipo3 txt16">DADO QUE YA TENEMOS UN HOGAR ESTABLECIDO, APRECIAMOS SU GENEROSIDAD EN FORMA DE REGALO EN EFECTIVO.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container-fluid" style="background: #fafcf9;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="cardPrincipalBorde">
                     <h1 class="fuente_tipo3 txt40">CONFIRMACIÓN</h1>
                     <p class="fuente_tipo3 txt16">ES INDISPENSABLE CONFIRMAR SU ASISTENCIA</p>
                     <p class="fuente_tipo3 txt16">ESPERAMOS CONTAR CON SU PRESENCIA</p>
 
 
                     <div class="py-3">
-                        <a class="anclaLink" href="">Clic para confirmar <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-check" viewBox="0 0 16 16">
-  <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
-  <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"/>
-</svg></a>
+                        <a class="anclaLink" href="https://api.whatsapp.com/send?phone=522225214128">Confirmar con la novia <svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" fill="currentColor" class="bi bi-envelope-check"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                                <path
+                                    d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686" />
+                            </svg></a>
+                    </div>
+
+                                      <div class="py-3">
+                        <a class="anclaLink" href="https://api.whatsapp.com/send?phone=522212636786">Confirmar con el novio <svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" fill="currentColor" class="bi bi-envelope-check"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                                <path
+                                    d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686" />
+                            </svg></a>
                     </div>
 
 
@@ -589,36 +343,26 @@
 
 
     <div class="container-fluid" style="background: #fafcf9;">
-        <div class="container py-5">
+        <div class="container py-2">
             <div class="row text-center">
                 <div class="cardPrincipalSinBorde">
-                    <p class="fuente_tipo3 txt16">Etiqueta las fotos de nuestra boda con este hashtag
-</p>
-      <h1 class="fuente_tipo3 txt40">#J&A</h1>
-
-                   
-
-
-
+                    <p class="fuente_tipo3 txt20">Etiqueta las fotos de nuestra boda con el hashtag
+                    </p>
+                    <h1 class="fuente_tipo3 txt40">#J&A</h1>
                 </div>
             </div>
         </div>
     </div>
 
 
-        <div class="container-fluid" style="background: #fafcf9;">
+    <div class="container-fluid" style="background: #fafcf9;">
         <div class="container py-5">
             <div class="row text-center">
                 <div class="cardPrincipalSinBorde">
-      <h1 class="fuente_tipo3 txt40">
-        GRACIAS POR ACOMPAÑARNOS EN ESTE DÍA TAN ESPECIAL PARA NOSOTROS
-      </h1>
-      <span class="corazon-texto">♥</span>
-
-                   
-
-
-
+                    <h1 class="fuente_tipo3 txt40">
+                        GRACIAS POR ACOMPAÑARNOS EN ESTE DÍA TAN ESPECIAL PARA NOSOTROS
+                    </h1>
+                    <span class="corazon-texto">♥</span>
                 </div>
             </div>
         </div>
@@ -628,22 +372,22 @@
     <div class="row d-flex justify-content-center">
         <div class="gallery">
             <div class="gallery-item item-1">
-                <img src="./IMG_100.jpeg" alt="Descripción de la  1">
+                <img src="./IMG_1.jpeg" alt="Descripción de la  1">
             </div>
             <div class="gallery-item item-2">
-                <img src="./IMG_101.jpeg" alt="Descripción de la  2">
+                <img src="./IMG_2.jpeg" alt="Descripción de la  2">
             </div>
             <div class="gallery-item item-3">
-                <img src="./IMG_102.jpeg" alt="Descripción de la  3">
+                <img src="./IMG_6.jpg" alt="Descripción de la  3">
             </div>
             <div class="gallery-item item-4">
-                <img src="./IMG_103.jpeg" alt="Descripción de la  4">
+                <img src="./IMG_4.jpeg" alt="Descripción de la  4">
             </div>
             <div class="gallery-item item-5">
-                <img src="./IMG_104.jpeg" alt="Descripción de la  5">
+                <img src="./IMG_5.jpeg" alt="Descripción de la  5">
             </div>
             <div class="gallery-item item-6">
-                <img src="./IMG_105.jpeg" alt="Descripción de la  6">
+                <img src="./IMG_3.jpeg" alt="Descripción de la  6">
             </div>
         </div>
     </div>
