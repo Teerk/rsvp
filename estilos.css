@@ -19,11 +19,13 @@
     .anclaLink {
         border: solid 1px #999999;
         text-align: center;
-        padding: 10px 50px;
+        padding: 10px 20px;
         background: #000;
         color: #fff;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 18px;
+        font-style: normal;
+        font-family: "Libertinus Math", system-ui;
         font-weight: 400;
         font-style: normal;
     }
@@ -32,7 +34,7 @@
         border: solid 1px #4b4b4b;
         border-radius: 3px;
         text-align: center;
-        padding: 10px 50px;
+        padding: 10px 22px;
         background: #484848;
         color: #fff;
         text-decoration: none;
